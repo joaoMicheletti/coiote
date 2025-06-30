@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Design - Soluções em Vidro com Design e Inovação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-glass-whiskey text-blue-900 text-2xl mr-2"></i>
+                <div>
+                    <h1 class="text-xl font-bold text-blue-900">Glass Design</h1>
+                    <p class="text-xs text-gray-500">Soluções em Vidro com Design e Inovação</p>
+                </div>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#home" class="text-blue-900 hover:text-blue-700 font-medium">Início</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-700 font-medium">Sobre Nós</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-blue-700 font-medium">Serviços</a></li>
+                    <li><a href="#gallery" class="text-gray-600 hover:text-blue-700 font-medium">Projetos</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-700 font-medium">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-blue-900">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 text-white">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Transforme seu ambiente com a elegância do vidro</h1>
+                <p class="text-xl mb-8">Projetos personalizados com sofisticação, segurança e design exclusivo. Peça um orçamento agora mesmo!</p>
+                <a href="#contact" class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+                    Solicitar Orçamento <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Projeto de vidro moderno" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-6">Quem Somos</h2>
+                    <p class="text-lg mb-6 text-gray-700">Na Glass Design, somos especialistas em soluções de vidro para residências, empresas e grandes projetos arquitetônicos. Unimos inovação, segurança e um acabamento impecável para transformar espaços e criar ambientes sofisticados e funcionais.</p>
+                    <p class="text-lg mb-6 text-gray-700">Com mais de 15 anos de experiência no mercado, nossa equipe de profissionais altamente qualificados está pronta para transformar sua visão em realidade, com materiais de primeira qualidade e técnicas de ponta.</p>
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-900">
+                        <p class="text-blue-900 font-medium">✔️ Não perca tempo! Seu projeto com vidro está a um clique de distância.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Nossos Serviços</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Oferecemos atendimento personalizado e soluções sob medida para cada cliente.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-building text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Fachadas de Vidro</h3>
+                    <p class="text-gray-600">Soluções modernas e resistentes para fachadas comerciais e residenciais, combinando beleza e funcionalidade.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-stairs text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Guarda-corpos e Corrimãos</h3>
+                    <p class="text-gray-600">Segurança e elegância para escadas e varandas, com designs personalizados para seu projeto.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-bath text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Box para Banheiros</h3>
+                    <p class="text-gray-600">Boxes de alta qualidade com diversos modelos e acabamentos para complementar seu banheiro.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-home text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Fechamento de Sacadas</h3>
+                    <p class="text-gray-600">Proteção e valorização para sua sacada com vidros especiais que garantem segurança e visibilidade.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-store text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Vitrines Comerciais</h3>
+                    <p class="text-gray-600">Destaque seu comércio com vitrines modernas e funcionais que atraem clientes e valorizam seus produtos.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-columns text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Espelhos e Divisórias de Vidro</h3>
+                    <p class="text-gray-600">Amplie espaços e crie ambientes sofisticados com nossas divisórias e espelhos personalizados.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <div class="bg-blue-50 p-6 rounded-lg inline-block">
+                    <p class="text-blue-900 font-medium">✔️ Atendimento rápido, personalizado e com garantia de qualidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Inspire-se com Nossos Projetos</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Veja como nossos clientes transformaram seus ambientes com a Glass Design.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Projeto de vidro" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-blue-900">Fachada Comercial</h3>
+                        <p class="text-gray-600 text-sm">Shopping Center - São Paulo</p>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Projeto de vidro" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-blue-900">Escada de Vidro</h3>
+                        <p class="text-gray-600 text-sm">Residência - Rio de Janeiro</p>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Projeto de vidro" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-blue-900">Divisórias de Escritório</h3>
+                        <p class="text-gray-600 text-sm">Empresa de Tecnologia - Belo Horizonte</p>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27c2d7b4874e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Projeto de vidro" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-blue-900">Box de Banheiro</h3>
+                        <p class="text-gray-600 text-sm">Apartamento - Curitiba</p>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Projeto de vidro" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-blue-900">Vitrine Comercial</h3>
+                        <p class="text-gray-600 text-sm">Loja de Moda - Porto Alegre</p>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1583845112209-5dc0a6b16dac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Projeto de vidro" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-blue-900">Fechamento de Sacada</h3>
+                        <p class="text-gray-600 text-sm">Condomínio - Florianópolis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">O que dizem nossos clientes</h2>
+                <p class="text-xl max-w-2xl mx-auto">Confira a opinião de quem já contratou nossos serviços</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Roberta Fernandes</h4>
+                            <p class="text-blue-200 text-sm">Arquiteta</p>
+                        </div>
+                    </div>
+                    <p class="italic">"A Glass Design superou todas as minhas expectativas. Atendimento rápido, material de qualidade e um acabamento impecável! Trabalho com eles em todos meus projetos que envolvem vidro."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Carlos Eduardo</h4>
+                            <p class="text-blue-200 text-sm">Diretor Comercial</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Recomendo de olhos fechados! Nosso escritório ficou incrível com as divisórias de vidro. O projeto foi entregue antes do prazo e com uma qualidade impressionante. Certamente contrataremos novamente."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-900 text-white p-10 flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-6">Solicite seu Orçamento</h2>
+                        <p class="mb-6">Preencha o formulário ao lado e nossa equipe entrará em contato pelo WhatsApp:</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-phone-alt text-blue-200"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-blue-200">Telefone</p>
+                                    <p class="text-white">(11) 99999-9999</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-envelope text-blue-200"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-blue-200">E-mail</p>
+                                    <p class="text-white">contato@glassdesign.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-blue-200"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-blue-200">Endereço</p>
+                                    <p class="text-white">Av. Paulista, 1000 - São Paulo/SP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-10">
+                        <form id="budgetForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                                <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-900 focus:border-blue-900">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                                <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-900 focus:border-blue-900">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Telefone</label>
+                                <input type="tel" id="phone" name="phone" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-900 focus:border-blue-900">
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-700">Tipo de Serviço</label>
+                                <select id="service" name="service" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-900 focus:border-blue-900">
+                                    <option value="Fachadas de Vidro">Fachadas de Vidro</option>
+                                    <option value="Guarda-corpos e Corrimãos">Guarda-corpos e Corrimãos</option>
+                                    <option value="Box para Banheiros">Box para Banheiros</option>
+                                    <option value="Fechamento de Sacadas">Fechamento de Sacadas</option>
+                                    <option value="Vitrines Comerciais">Vitrines Comerciais</option>
+                                    <option value="Espelhos e Divisórias de Vidro">Espelhos e Divisórias de Vidro</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Mensagem/Detalhes</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-900 focus:border-blue-900"></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-900 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-900 transition duration-300">
+                                    Enviar Orçamento <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <div class="bg-blue-50 p-6 rounded-lg inline-block">
+                    <p class="text-blue-900 font-medium">✔️ Faça agora mesmo seu orçamento sem compromisso!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-glass-whiskey text-blue-400 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold">Glass Design</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Soluções em Vidro com Design e Inovação</p>
+                    <p class="text-gray-400">CNPJ: 00.000.000/0001-00</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Início</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">Sobre Nós</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Serviços</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Projetos</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.instagram.com/sua_empresa" target="_blank" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Siga-nos no Instagram: <a href="https://www.instagram.com/sua_empresa" target="_blank" class="text-blue-400 hover:underline">Instagram Glass Design</a></p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Glass Design. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission to WhatsApp
+        document.getElementById('budgetForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappMessage = `Olá, Glass Design! Gostaria de solicitar um orçamento.\n\n` +
+                                  `*Nome:* ${name}\n` +
+                                  `*E-mail:* ${email}\n` +
+                                  `*Telefone:* ${phone}\n` +
+                                  `*Serviço:* ${service}\n` +
+                                  `*Mensagem:* ${message || 'Não informada'}`;
+            
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/5511932223533?text=${encodedMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
